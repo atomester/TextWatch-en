@@ -1,53 +1,53 @@
-#include "num2words-en.h"
+#include "num2words-hu.h"
 #include "string.h"
 
 static const char* const ONES[] = {
-  "zero",
-  "one",
-  "two",
-  "three",
-  "four",
-  "five",
-  "six",
-  "seven",
-  "eight",
-  "nine"
+  "nulla",
+  "egy",
+  "kettoo",
+  "haarom",
+  "neegy",
+  "oot",
+  "hat",
+  "heet",
+  "nyolc",
+  "kilenc"
 };
 
 static const char* const TEENS[] ={
   "",
-  "eleven",
-  "twelve",
-  "thirteen",
-  "fourteen",
-  "fifteen",
-  "sixteen",
-  "seventeen",
-  "eighteen",
-  "nineteen"
+  "tizen",
+  "tizenkettoo",
+  "tizenhaarom",
+  "tizenneegy",
+  "tizenoot",
+  "tizenhat",
+  "tizenheet",
+  "tizennyolc",
+  "tizenkilenc"
 };
 
 static const char* const TENS[] = {
   "",
-  "ten",
-  "twenty",
-  "thirty",
-  "forty",
-  "fifty",
-  "sixty",
-  "seventy",
-  "eighty",
-  "ninety"
+  "tiz",
+  "huusz",
+  "harminc",
+  "negyven",
+  "ootven",
+  "hatvan",
+  "hetven",
+  "nyolcvan",
+  "kilencven"
 };
 
-static const char* STR_OH_CLOCK = "o'clock";
-static const char* STR_NOON = "noon";
-static const char* STR_MIDNIGHT = "midnight";
-static const char* STR_QUARTER = "quarter";
-static const char* STR_TO = "to";
-static const char* STR_PAST = "past";
-static const char* STR_HALF = "half";
-static const char* STR_AFTER = "after";
+static const char* STR_OH_CLOCK = "kereken";
+static const char* STR_NOON = "deel";
+static const char* STR_MIDNIGHT = "eejfeel";
+static const char* STR_QUARTER = "negyed";
+static const char* STR_TO = "muulva";
+static const char* STR_PAST = "muult";
+static const char* STR_HALF = "feel";
+static const char* STR_AFTER = "utaan";
 static const char* STR_OH = "oh";
 
 static size_t append_number(char* words, int num, int minutes) {
