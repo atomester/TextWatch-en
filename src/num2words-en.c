@@ -1,4 +1,4 @@
-#include "num2words-hu.h"
+#include "num2words-en.h"
 #include "string.h"
 
 static const char* const ONES[] = {
